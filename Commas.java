@@ -19,7 +19,7 @@ public class Commas extends ConsoleProgram {
 	private String addCommasToNumericString(String number) {
 		String newString = "";
 		for (int i = 0; i < number.length(); i++) {
-			if (((number.length() - i) % 3 == 0) && number.length() > 3)  {
+			if (((number.length() - i) % 3 == 0) && i > 1)  {
 				newString += ",";
 			}
 			newString += number.charAt(i);
